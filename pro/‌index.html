@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smart Ambulance Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
+    <script
+    src="https://unpkg.com/leaflet/dist/leaflet.js">
+    </script>
+</head>
+
+<body>
+
+<h1>🚑 Smart Ambulance Monitoring System</h1>
+
+<div class="main-container">
+
+    <div class="left-grid">
+
+        <div class="card">
+            <h2>❤️ Heart Rate</h2>
+            <p id="hr">95 BPM</p>
+        </div>
+
+        <div class="card">
+            <h2>🩸 SpO₂</h2>
+            <p id="spo2">97%</p>
+        </div>
+
+        <div class="card">
+            <h2>🌡️ Temperature</h2>
+            <p id="temp">37°C</p>
+        </div>
+
+        <div class="card">
+            <h2>🚨 Status</h2>
+            <p id="status">NORMAL</p>
+        </div>
+
+    </div>
+
+    <div class="right-map">
+
+        <h2>🏥 Destination</h2>
+
+        <p>
+            Government General Hospital,
+            Vijayawada
+        </p>
+
+        <p>
+            Distance:
+            <span id="distance">4.2 km</span>
+        </p>
+
+        <div id="map"></div>
+
+    </div>
+
+</div>
+
+<script src="gps.js"></script>
+
+</body>
+</html>
